@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones de Segundo Grado | Colegio De La Salle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="badge-lasalle">La Salle León</span>
+        <span class="brand-text">f(x) = ax² + bx + c</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#que-es">¿Qué es?</a>
+        <a href="#formas">Formas</a>
+        <a href="#graficas">Gráficas e Interactivo</a>
+        <a href="#aplicaciones">Aplicaciones</a>
+        <a href="#conclusion">Conclusión y Reflexión</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INICIO (Criterios 1 y 3) -->
+    <section id="inicio" class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow-lasalle">INSTRUMENTO DE EVALUACIÓN DE MATEMÁTICA</p>
+          <h1>Funciones de<br><span class="highlight">Segundo Grado</span></h1>
+          <p class="hero-sub">Estudio integral de la función cuadrática: componentes, transformación de ecuaciones, análisis gráfico y resolución de situaciones prácticas.</p>
+          
+          <div class="hero-card-author">
+            <span class="author-label">Estudiante:</span>
+            <span class="author-name">Johan Misael Rojas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUE ES (Criterio 6) -->
+    <section id="que-es" class="content-section">
+      <div class="section-inner">
+        <h2>1. ¿Qué es una función cuadrática?</h2>
+        <p>Una función cuadrática o de segundo grado es una función polinómica en la que el término de mayor grado tiene exponente 2. Su representación en el plano cartesiano es una curva simétrica llamada <strong>parábola</strong>.</p>
+
+        <div class="math-block hero-formula">
+          f(x) = ax² + bx + c
+        </div>
+
+        <div class="media-container">
+          <!-- Gráfico visual SVG (Criterio 4) -->
+          <svg class="svg-diagram" viewBox="0 0 300 180">
+            <line x1="20" y1="150" x2="280" y2="150" stroke="#00205B" stroke-width="2"/>
+            <line x1="150" y1="20" x2="150" y2="170" stroke="#00205B" stroke-width="2"/>
+            <path d="M 50 20 Q 150 160 250 20" stroke="#00A3E0" stroke-width="4" fill="none"/>
+            <circle cx="150" cy="90" r="5" fill="#FFC72C" stroke="#00205B" stroke-width="2"/>
+            <text x="160" y="95" font-size="12" font-family="Roboto" fill="#00205B" font-weight="bold">Vértice (h, k)</text>
+            <text x="260" y="140" font-size="12" font-family="Roboto" fill="#00205B">Eje X</text>
+            <text x="160" y="30" font-size="12" font-family="Roboto" fill="#00205B">Eje Y</text>
+          </svg>
+        </div>
+
+        <h3>Componentes generales</h3>
+        <div class="table-responsive">
+          <table class="lasalle-table">
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Símbolo</th>
+                <th>Definición y Función</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Término Cuadrático</strong></td>
+                <td><code class="math-code">ax²</code></td>
+                <td>Coeficiente principal (<code class="math-code">a ≠ 0</code>). Controla la apertura y orientación de la parábola.</td>
+              </tr>
+              <tr>
+                <td><strong>Término Lineal</strong></td>
+                <td><code class="math-code">bx</code></td>
+                <td>Coeficiente de primer grado. Desplaza horizontalmente el eje de simetría.</td>
+              </tr>
+              <tr>
+                <td><strong>Término Independiente</strong></td>
+                <td><code class="math-code">c</code></td>
+                <td>Punto exacto de intersección con el eje Y en las coordenadas <code class="math-code">(0, c)</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAS DE LA ECUACION (Criterios 7, 8 y 9) -->
+    <section id="formas" class="content-section alt">
+      <div class="section-inner">
+        <h2>2. Formas de la Ecuación Cuadrática</h2>
+        <p>Las funciones de segundo grado pueden expresarse de diferentes maneras algebraicas, según las transformaciones de la parábola base <code class="math-code">y = ax²</code>.</p>
+
+        <!-- Criterio 7 -->
+        <div class="forma-box-large">
+          <span class="card-badge">Criterio 7</span>
+          <h3>Forma General: <span class="math-inline">y = ax² + bx + c</span></h3>
+          <p>Es la representación estándar donde los coeficientes son visibles. Permite identificar rápidamente el corte con el eje Y en <code class="math-code">(0, c)</code> y aplicar directamente la fórmula del vértice <code class="math-code">h = -b / (2a)</code>.</p>
+        </div>
+
+        <!-- Criterio 8 -->
+        <h3>Traslaciones y Formas Intermedias</h3>
+        <div class="formas-grid">
+          <div class="forma-card">
+            <span class="card-badge">Criterio 8a</span>
+            <h4>Traslación Vertical</h4>
+            <div class="math-block compact">y = ax² + c</div>
+            <p>Desplaza la parábola base <code class="math-code">c</code> unidades verticalmente. El vértice se ubica en <code class="math-code">(0, c)</code>.</p>
+          </div>
+
+          <div class="forma-card">
+            <span class="card-badge">Criterio 8b</span>
+            <h4>Traslación Horizontal</h4>
+            <div class="math-block compact">y = a(x - h)²</div>
+            <p>Desplaza la parábola <code class="math-code">h</code> unidades horizontalmente. El vértice se ubica en <code class="math-code">(h, 0)</code>.</p>
+          </div>
+        </div>
+
+        <!-- Criterio 9 -->
+        <div class="forma-box-large gold-border" style="margin-top: 24px;">
+          <span class="card-badge gold">Criterio 9</span>
+          <h3>Forma Vértice o Estándar: <span class="math-inline">y = a(x - h)² + k</span></h3>
+          <p>Combina ambas traslaciones simultáneamente. Es la forma más eficiente para graficar, pues entrega de manera explícita las coordenadas exactas del vértice <code class="math-code">(h, k)</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRAFICAS Y ANALISIS (Criterios 10, 11 y 12) -->
+    <section id="graficas" class="content-section">
+      <div class="section-inner">
+        <h2>3. Análisis Gráfico y Calculadora Interactiva</h2>
+
+        <div class="conceptos-grid">
+          <!-- Criterio 10 -->
+          <div class="concepto-box">
+            <h4>Concavidad (Signo de a)</h4>
+            <p>• Si <code class="math-code">a > 0</code>: Parábola cóncava hacia arriba (posee un valor <strong>Mínimo</strong>).<br>
+               • Si <code class="math-code">a < 0</code>: Parábola cóncava hacia abajo (posee un valor <strong>Máximo</strong>).</p>
+          </div>
+
+          <!-- Criterio 11 -->
+          <div class="concepto-box">
+            <h4>Vértice y Eje de Simetría</h4>
+            <p>El punto extremo se obtiene mediante:</p>
+            <div class="math-block compact">h = -b / (2a)</div>
+            <div class="math-block compact">k = f(h)</div>
+            <p class="small-text">La recta vertical <code class="math-code">x = h</code> divide la parábola en dos partes simétricas.</p>
+          </div>
+        </div>
+
+        <!-- Criterio 12 y 15 -->
+        <div class="grapher-wrapper">
+          <h3>Calculadora Gráfica Interactiva</h3>
+          <p>Modifica los deslizadores para visualizar cómo cambian el vértice, los cortes con los ejes y las raíces:</p>
+
+          <div class="grapher">
+            <div class="canvas-container">
+              <canvas id="graphCanvas" width="700" height="440" aria-label="Gráfica interactiva"></canvas>
+            </div>
+
+            <div class="grapher-controls">
+              <div class="slider-group">
+                <label for="sliderA">Coeficiente a = <span id="valA" class="val-highlight">1</span></label>
+                <input type="range" id="sliderA" min="-5" max="5" step="0.1" value="1">
+              </div>
+              <div class="slider-group">
+                <label for="sliderB">Coeficiente b = <span id="valB" class="val-highlight">0</span></label>
+                <input type="range" id="sliderB" min="-10" max="10" step="0.5" value="0">
+              </div>
+              <div class="slider-group">
+                <label for="sliderC">Coeficiente c = <span id="valC" class="val-highlight">0</span></label>
+                <input type="range" id="sliderC" min="-10" max="10" step="0.5" value="0">
+              </div>
+
+              <div class="math-block display-eq" id="equationDisplay">y = x²</div>
+
+              <dl class="grapher-info">
+                <div><dt>Vértice (h, k):</dt><dd id="infoVertice">(0, 0)</dd></div>
+                <div><dt>Eje de simetría:</dt><dd id="infoEje">x = 0</dd></div>
+                <div><dt>Concavidad:</dt><dd id="infoConcavidad">Hacia arriba (Mínimo)</dd></div>
+                <div><dt>Corte Eje Y:</dt><dd id="infoCorteY">(0, 0)</dd></div>
+                <div><dt>Discriminante (Δ):</dt><dd id="infoDiscriminante">0</dd></div>
+                <div><dt>Raíces (Eje X):</dt><dd id="infoRaices">x = 0</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICACIONES PRACTICAS (Criterios 13 y 14) -->
+    <section id="aplicaciones" class="content-section alt">
+      <div class="section-inner">
+        <h2>4. Aplicaciones en la Vida Cotidiana</h2>
+        <p>Resolución de problemas contextualizados sin complicaciones innecesarias:</p>
+
+        <!-- Problema 1 -->
+        <div class="ejemplo-card">
+          <div class="ejemplo-header">
+            <span class="ejemplo-num">Problema 1</span>
+            <h3>Geometría: Optimización de Área de un Jardín</h3>
+          </div>
+          <p>Un agricultor desea delimitar un jardín rectangular utilizando <strong>40 metros de malla</strong> para tres lados (aprovechando una pared de piedra como cuarto lado). La función que modela el área es:</p>
+
+          <div class="math-block">A(x) = -2x² + 40x</div>
+
+          <div class="pasos-box">
+            <strong>Desarrollo paso a paso:</strong>
+            <ol>
+              <li>Identificación de coeficientes: <code class="math-code">a = -2</code>, <code class="math-code">b = 40</code>, <code class="math-code">c = 0</code>.</li>
+              <li>Cálculo del ancho óptimo (<code class="math-code">h</code>):
+                <div class="math-block compact">x = -b / (2a) = -40 / (2 · -2) = 10 metros</div>
+              </li>
+              <li>Cálculo del área máxima (<code class="math-code">k</code>):
+                <div class="math-block compact">A(10) = -2(10)² + 40(10) = -200 + 400 = 200 m²</div>
+              </li>
+            </ol>
+          </div>
+          <p class="resultado-highlight">✔ Para obtener el área máxima (200 m²), el jardín debe tener 10 m de ancho por 20 m de largo.</p>
+        </div>
+
+        <!-- Problema 2 -->
+        <div class="ejemplo-card">
+          <div class="ejemplo-header">
+            <span class="ejemplo-num">Problema 2</span>
+            <h3>Economía: Determinación del Precio para la Máxima Ganancia</h3>
+          </div>
+          <p>Un grupo de estudiantes vende camisetas escolares. La ganancia semanal <code class="math-code">G(x)</code> en dólares en función del precio de venta <code class="math-code">x</code> viene dada por:</p>
+
+          <div class="math-block">G(x) = -10x² + 100x - 150</div>
+
+          <div class="pasos-box">
+            <strong>Desarrollo paso a paso:</strong>
+            <ol>
+              <li>Identificación de coeficientes: <code class="math-code">a = -10</code>, <code class="math-code">b = 100</code>, <code class="math-code">c = -150</code>.</li>
+              <li>Cálculo del precio óptimo de venta:
+                <div class="math-block compact">x = -100 / (2 · -10) = $5.00</div>
+              </li>
+              <li>Cálculo de la ganancia máxima:
+                <div class="math-block compact">G(5) = -10(5)² + 100(5) - 150 = -250 + 500 - 150 = $100.00</div>
+              </li>
+            </ol>
+          </div>
+          <p class="resultado-highlight">✔ Vendiendo las camisetas a $5.00 cada una, se obtiene la ganancia máxima posible de $100.00.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION Y REFLEXION CRITICA (Criterio 16) -->
+    <section id="conclusion" class="content-section">
+      <div class="section-inner">
+        <h2>5. Conclusión y Actitud Crítica</h2>
+        <p>Las funciones cuadráticas son herramientas matemáticas esenciales para modelar, optimizar y predecir resultados en diversos campos cotidianos. Su análisis permite encontrar máximos y mínimos con precisión.</p>
+
+        <div class="reflexion-box">
+          <h3>Reflexión Crítica sobre los Modelos Matemáticos (Criterio 16)</h3>
+          <p>Es indispensable reconocer que <strong>los modelos matemáticos son simplificaciones de la realidad</strong>. En la práctica:</p>
+          <ul>
+            <li>En los problemas de economía, variables externas como la inflación, la competencia o el desabastecimiento pueden alterar la curva teórica de ganancias.</li>
+            <li>En los modelos geométricos, no siempre se contemplan las irregularidades físicas del terreno o del material utilizado.</li>
+          </ul>
+          <p>Por lo tanto, la matemática nos brinda el marco teórico óptimo para la toma de decisiones, pero siempre debe acompañarse de un criterio reflexivo y adaptativo frente al contexto real.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Colegio De La Salle &middot; León, Nicaragua</p>
+      <p class="footer-author">Instrumento de Evaluación de Matemática &middot; Johan Misael Rojas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
